@@ -1,9 +1,9 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint douyin.podspec` to validate before publishing.
+# Run `pod lib lint douyin_login.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'douyin'
+  s.name             = 'douyin_login'
   s.version          = '0.0.1'
   s.summary          = '抖音授权登录插件'
   s.description      = <<-DESC
