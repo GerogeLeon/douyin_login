@@ -1,5 +1,7 @@
 # 抖音授权登录Flutter插件
 
+forked from https://gitee.com/liuxin_dd/douyin
+
 ## 功能
 
 #### 支持的API
