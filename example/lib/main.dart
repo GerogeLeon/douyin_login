@@ -17,6 +17,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   String _initState = "none";
   String _code = "";
+  String _clientKey = "";
   final _douyinPlugin = Douyin();
 
   @override
@@ -36,7 +37,7 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initPlatformState() async {
     String initState;
-    initState = await _douyinPlugin.registerDouyinApp(apiKey: '');
+    initState = await _douyinPlugin.registerDouyinApp(apiKey: _clientKey);
     if (!mounted) return;
 
     setState(() {
