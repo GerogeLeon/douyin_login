@@ -35,7 +35,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.postliu.douyin
+        package: com.postliu.douyin_login
         pluginClass: DouyinPlugin
       ios:
         pluginClass: DouyinPlugin
