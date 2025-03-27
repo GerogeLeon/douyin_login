@@ -1,10 +1,14 @@
-## 0.0.1
+## 1.0.5
 
-* initial release.
+* fix critical issue
 
 ## 1.0.4
 
 * fix critical issue
+
+## 0.0.1
+
+* initial release.
 
 ## 1.0.0
 

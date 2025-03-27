@@ -1,6 +1,6 @@
 name: douyin_login
 description: Flutter plugin for douyin login,support platform for Android and iOS
-version: 1.0.4
+version: 1.0.5
 homepage: https://github.com/GerogeLeon/douyin_login
 
 environment:
