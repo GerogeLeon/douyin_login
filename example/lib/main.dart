@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initPlatformState() async {
     String initState;
-    initState = await _douyinPlugin.registerDouyinApp(apiKey: '');
+    initState = await _douyinPlugin.registerDouyinApp(apiKey: 'awkhdm');
     if (!mounted) return;
 
     setState(() {
