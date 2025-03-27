@@ -1,4 +1,4 @@
-import 'package:douyin/douyin_method_channel.dart';
+import 'package:douyin_login/douyin_method_channel.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 

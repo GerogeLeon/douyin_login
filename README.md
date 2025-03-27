@@ -38,21 +38,43 @@ repositories {
 }
 ```
 
-**iOS**: 在项目的ios目录中的`Podfile`文件中导入抖音SDK
+**iOS**
 
-⚠️:需要注释掉`use_frameworks!`,因为抖音SDK有静态引用
+* 在Info.plist的LSApplicationQueriesSchemes数组添加元素，示意如下
 
 ```
-pod 'DouyinOpenSDK'
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>douyinopensdk</string>
+		<string>douyinliteopensdk</string>
+		<string>douyinsharesdk</string>
+		<string>snssdk1128</string>
+	</array>
+
 ```
 
-* `info.plist`的`Queried URL Schemes`添加以下几个值
+* TARGETS->Info->URL Types中添加URL Schemes为注册的抖音Client Key,用于处理授权登录后返回自己的App，
+  即相当于在Info.plist文件中在CFBundleURLTypes数组中增加一个dict,示意如下，要替换clientKey为你的。
 
-| douyinopensdk | douyinliteopensdk | douyinsharesdk | snssdk1128 |
-|---------------|-------------------|----------------|------------|
+ ```
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>douyin</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>clientKey</string>
+            </array>
+        </dict>
+    </array>
+        
+```
 
-* TARGETS->Info->URL Types*中添加URL_Schemes为注册的抖音Client Key,用于处理授权登录后返回自己的App
 * 项目的`AppDelegate.swift`添加回调监听
+
 ```swift
 import UIKit
 import Flutter
@@ -85,7 +107,7 @@ import DouyinOpenSDK
 ```dart
 import 'dart:async';
 
-import 'package:douyin/douyin.dart';
+import 'package:douyin_login/douyin.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -102,6 +124,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   String _initState = "none";
   String _code = "";
+  String _clientKey = "";
   final _douyinPlugin = Douyin();
 
   @override
@@ -121,7 +144,7 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initPlatformState() async {
     String initState;
-    initState = await _douyinPlugin.registerDouyinApp(apiKey: '');
+    initState = await _douyinPlugin.registerDouyinApp(apiKey: _clientKey);
     if (!mounted) return;
 
     setState(() {

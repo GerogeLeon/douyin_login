@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:douyin/douyin.dart';
-import 'package:douyin/douyin_method_channel.dart';
-import 'package:douyin/douyin_platform_interface.dart';
-import 'package:douyin/model/resp.dart';
+import 'package:douyin_login/douyin.dart';
+import 'package:douyin_login/douyin_method_channel.dart';
+import 'package:douyin_login/douyin_platform_interface.dart';
+import 'package:douyin_login/model/resp.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
