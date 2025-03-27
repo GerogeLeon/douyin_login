@@ -66,7 +66,7 @@ repositories {
             <string>douyin</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>clientKey</string>
+                <string>clientKey</string>  #需替换为你的clientKey
             </array>
         </dict>
     </array>
@@ -124,7 +124,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   String _initState = "none";
   String _code = "";
-  String _clientKey = "";
+  String _clientKey = "xxx";
   final _douyinPlugin = Douyin();
 
   @override
