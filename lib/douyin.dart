@@ -1,4 +1,4 @@
-import 'package:douyin/model/resp.dart';
+import './model/resp.dart';
 
 import 'douyin_platform_interface.dart';
 

@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:douyin/douyin_platform_interface.dart';
-import 'package:douyin/model/resp.dart';
+import './douyin_platform_interface.dart';
+import './model/resp.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 

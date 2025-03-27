@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:douyin/douyin.dart';
+import 'package:douyin_login/douyin.dart';
 import 'package:flutter/material.dart';
 
 void main() {
