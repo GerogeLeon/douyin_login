@@ -1,0 +1,35 @@
+PODS:
+  - douyin (0.0.1):
+    - Flutter
+  - DouyinOpenSDK (4.1.8)
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - douyin (from `.symlinks/plugins/douyin/ios`)
+  - DouyinOpenSDK
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+
+SPEC REPOS:
+  trunk:
+    - DouyinOpenSDK
+
+EXTERNAL SOURCES:
+  douyin:
+    :path: ".symlinks/plugins/douyin/ios"
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+
+SPEC CHECKSUMS:
+  douyin: db31032ad0a3b7bae98d7e2d4790db5e77af0c28
+  DouyinOpenSDK: 4683d295533bf4662d95d9458c96bf25016be3f1
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  integration_test: 13825b8a9334a850581300559b8839134b124670
+
+PODFILE CHECKSUM: 53c868d77a86bb4857107eb2b55211637c46814d
+
+COCOAPODS: 1.12.1
