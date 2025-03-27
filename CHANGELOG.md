@@ -2,6 +2,10 @@
 
 * initial release.
 
+## 1.0.4
+
+* fix critical issue
+
 ## 1.0.0
 
 * Update documentation
