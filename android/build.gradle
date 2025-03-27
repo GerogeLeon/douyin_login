@@ -1,4 +1,4 @@
-group 'com.postliu.douyin'
+group 'com.postliu.douyin_login'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -27,7 +27,7 @@ apply plugin: 'kotlin-android'
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace 'com.postliu.douyin'
+        namespace 'com.postliu.douyin_login'
     }
 
     compileSdkVersion 33
