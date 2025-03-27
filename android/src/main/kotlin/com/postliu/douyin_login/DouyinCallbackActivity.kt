@@ -1,4 +1,4 @@
-package com.postliu.douyin
+package com.postliu.douyin_login
 
 import android.app.Activity
 import android.content.Intent
