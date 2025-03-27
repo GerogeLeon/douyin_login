@@ -17,7 +17,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   String _initState = "none";
   String _code = "";
-  String _clientKey = "";
+  String _clientKey = "awkhdmvsczo7rob2";
   final _douyinPlugin = Douyin();
 
   @override
