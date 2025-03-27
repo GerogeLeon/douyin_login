@@ -1,4 +1,4 @@
-package com.postliu.douyin
+package com.postliu.douyin_login
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
