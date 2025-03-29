@@ -1,3 +1,7 @@
+## 1.0.6
+
+* fix android: should always return original result
+
 ## 1.0.5
 
 * fix critical issue
