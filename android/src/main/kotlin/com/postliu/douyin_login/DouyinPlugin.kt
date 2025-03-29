@@ -83,14 +83,15 @@ class DouyinPlugin : FlutterPlugin, MethodCallHandler, ActivityAware,
                             "permission" to baseResp.grantedPermissions,
                             "authCode" to baseResp.authCode,
                         )
-                        if (baseResp.isSuccess) {
-                            channel.invokeMethod(OnAuthorCallback, result)
-
-                        } else if (baseResp.isCancel) {
-                            channel.invokeMethod(CancelAuthor, result)
-                        } else {
-                            channel.invokeMethod(Error, result)
-                        }
+                        channel.invokeMethod(OnAuthorCallback, result)
+//                        if (baseResp.isSuccess) {
+//                            channel.invokeMethod(OnAuthorCallback, result)
+//
+//                        } else if (baseResp.isCancel) {
+//                            channel.invokeMethod(CancelAuthor, result)
+//                        } else {
+//                            channel.invokeMethod(Error, result)
+//                        }
                     }
                 }
             }
